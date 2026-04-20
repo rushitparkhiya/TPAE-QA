@@ -24,7 +24,7 @@ Covers **Elementor Addons · Gutenberg Blocks · SEO Plugins · WooCommerce Exte
 
 <br />
 
-[Quick Start](#quick-start) · [What It Checks](#what-it-checks) · [Skills Reference](SKILLS.md) · [GitHub](https://github.com/adityaarsharma/plugorbit) · [Common WP Mistakes](docs/common-wp-mistakes.md)
+[Quick Start](#quick-start) · [What It Checks](#what-it-checks) · [Skills Reference](SKILLS.md) · [GitHub](https://github.com/adityaarsharma/orbit) · [Common WP Mistakes](docs/common-wp-mistakes.md)
 
 </div>
 
@@ -158,7 +158,7 @@ No commands to memorize — read `reports/qa-report-{timestamp}.md` after every 
 ### Option 1 — Interactive Setup (Recommended for First Time)
 
 ```bash
-git clone https://github.com/adityaarsharma/plugorbit
+git clone https://github.com/adityaarsharma/orbit
 cd orbit
 bash setup/init.sh
 ```
@@ -175,13 +175,13 @@ Every subsequent command reads from `qa.config.json` so you never repeat yoursel
 ### Option 2 — One-Liner (Skip Questions)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/adityaarsharma/plugorbit/main/setup/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/adityaarsharma/orbit/main/setup/install.sh | bash
 ```
 
 ### Option 3 — Manual
 
 ```bash
-git clone https://github.com/adityaarsharma/plugorbit
+git clone https://github.com/adityaarsharma/orbit
 cd orbit
 bash setup/install.sh   # installs all tools
 # Then configure qa.config.json manually (see structure below)
@@ -872,9 +872,9 @@ Orbit is designed to grow. Tracked ideas:
 - [ ] **Public benchmark dashboard** — community-submitted competitor scores, kept fresh
 
 ### Contribute an idea
-Open an issue at [github.com/adityaarsharma/plugorbit/issues](https://github.com/adityaarsharma/plugorbit/issues) with `[roadmap]` in the title.
+Open an issue at [github.com/adityaarsharma/orbit/issues](https://github.com/adityaarsharma/orbit/issues) with `[roadmap]` in the title.
 
-**Repo**: [github.com/adityaarsharma/plugorbit](https://github.com/adityaarsharma/plugorbit)
+**Repo**: [github.com/adityaarsharma/orbit](https://github.com/adityaarsharma/orbit)
 
 ---
 
@@ -921,4 +921,4 @@ Full skill-to-task mapping: [SKILLS.md](SKILLS.md). Power tools setup: [docs/pow
 
 ---
 
-*Built by [Aditya R Sharma](https://adityaarsharma.com) · [github.com/adityaarsharma/plugorbit](https://github.com/adityaarsharma/plugorbit) · Licensed for any WordPress plugin team serious about shipping quality.*
+*Built by [Aditya R Sharma](https://adityaarsharma.com) · [github.com/adityaarsharma/orbit](https://github.com/adityaarsharma/orbit) · Licensed for any WordPress plugin team serious about shipping quality.*
