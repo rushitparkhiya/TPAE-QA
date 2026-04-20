@@ -85,7 +85,7 @@ if [ "$MODE" = "full" ]; then
 
   cat > .wp-env.json <<EOF
 {
-  "core": "WordPress/WordPress#trunk",
+  "core": null,
   "plugins": [
     "$PLUGIN_PATH",
     "https://downloads.wordpress.org/plugin/query-monitor.zip"

@@ -10,7 +10,7 @@ setup('authenticate as WordPress admin', async ({ page }) => {
 
   await page.goto('/wp-login.php');
   await page.getByLabel('Username or Email Address').fill(WP_USER);
-  await page.getByLabel('Password').fill(WP_PASS);
+  await page.locator('input[name="pwd"]').fill(WP_PASS);
   await page.getByRole('button', { name: 'Log In' }).click();
   await expect(page).toHaveURL(/wp-admin/);
 

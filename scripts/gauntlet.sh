@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # PlugOrbit — Full Pre-Release Gauntlet
 # Usage: bash scripts/gauntlet.sh --plugin /path/to/plugin [--env local|ci] [--mode full|quick]
+#
+# macOS note: if you see "colors not working", run: export TERM=xterm-256color
 
 set -e
+[ -z "$TERM" ] && export TERM=xterm-256color
 
 PLUGIN_PATH=""
 ENV="local"
@@ -29,7 +32,10 @@ while [[ "$#" -gt 0 ]]; do
   shift
 done
 
-[ -z "$PLUGIN_PATH" ] && { echo "Usage: $0 --plugin /path/to/plugin"; exit 1; }
+if [ -z "$PLUGIN_PATH" ] && [ -f "qa.config.json" ]; then
+  PLUGIN_PATH=$(python3 -c "import json; print(json.load(open('qa.config.json'))['plugin']['path'])" 2>/dev/null || echo "")
+fi
+[ -z "$PLUGIN_PATH" ] && { echo "Usage: $0 --plugin /path/to/plugin  (or run from dir with qa.config.json)"; exit 1; }
 [ ! -d "$PLUGIN_PATH" ] && { echo "Plugin path not found: $PLUGIN_PATH"; exit 1; }
 
 mkdir -p "$REPORT_DIR"
@@ -85,8 +91,8 @@ if command -v phpcs &>/dev/null; then
     --report=summary \
     "$PLUGIN_PATH" 2>&1 || true)
 
-  ERROR_COUNT=$(echo "$PHPCS_OUT" | grep -oP '\d+(?= ERROR)' | head -1 || echo "0")
-  WARN_COUNT=$(echo "$PHPCS_OUT"  | grep -oP '\d+(?= WARNING)' | head -1 || echo "0")
+  ERROR_COUNT=$(echo "$PHPCS_OUT" | grep -oE '[0-9]+ ERROR' | grep -oE '[0-9]+' | head -1 || echo "0")
+  WARN_COUNT=$(echo "$PHPCS_OUT"  | grep -oE '[0-9]+ WARNING' | grep -oE '[0-9]+' | head -1 || echo "0")
 
   if [ "$ERROR_COUNT" -eq 0 ] && [ "$WARN_COUNT" -lt 10 ]; then
     ok "PHPCS — $ERROR_COUNT errors, $WARN_COUNT warnings"
@@ -189,8 +195,8 @@ if command -v npx &>/dev/null && [ -f "playwright.config.js" -o -f "tests/playwr
   PLAYWRIGHT_OUT=$(npx playwright test tests/playwright/ \
     --reporter=line 2>&1 || true)
 
-  PASSED=$(echo "$PLAYWRIGHT_OUT" | grep -oP '\d+(?= passed)' | head -1 || echo "0")
-  FAILED=$(echo "$PLAYWRIGHT_OUT" | grep -oP '\d+(?= failed)' | head -1 || echo "0")
+  PASSED=$(echo "$PLAYWRIGHT_OUT" | grep -oE '[0-9]+ passed' | grep -oE '[0-9]+' | head -1 || echo "0")
+  FAILED=$(echo "$PLAYWRIGHT_OUT" | grep -oE '[0-9]+ failed' | grep -oE '[0-9]+' | head -1 || echo "0")
 
   if [ "$FAILED" -eq 0 ]; then
     ok "Playwright — $PASSED tests passed"
@@ -212,7 +218,7 @@ if [ "$MODE" = "full" ]; then
   header "Step 7: Lighthouse Performance"
   log "## Step 7: Lighthouse"
 
-  WP_LOCAL_URL="${WP_TEST_URL:-http://localhost:8888}"
+  WP_LOCAL_URL="${WP_TEST_URL:-http://localhost:8881}"
 
   if command -v lighthouse &>/dev/null; then
     mkdir -p reports/lighthouse
@@ -241,8 +247,8 @@ print(int(d['categories']['performance']['score']*100))
       fi
     fi
   else
-    warn "Lighthouse not installed — skipping"
-    log "- ⚠ Lighthouse: skipped"
+    warn "Lighthouse not installed — skipping. Install: npm install -g lighthouse"
+    log "- ⚠ Lighthouse: skipped (install with: npm install -g lighthouse)"
     ((WARN++))
   fi
 fi

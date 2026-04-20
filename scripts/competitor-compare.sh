@@ -143,12 +143,12 @@ EOF
         --extensions=php \
         --ignore=vendor,node_modules \
         --report=summary \
-        "$DIR" 2>&1 | grep -oP '\d+(?= ERROR)' | head -1 || echo "0")
+        "$DIR" 2>&1 | grep -oE '[0-9]+ ERROR' | grep -oE '[0-9]+' | head -1 || echo "0")
       local PHPCS_WARNS=$(phpcs --standard=WordPress \
         --extensions=php \
         --ignore=vendor,node_modules \
         --report=summary \
-        "$DIR" 2>&1 | grep -oP '\d+(?= WARNING)' | head -1 || echo "0")
+        "$DIR" 2>&1 | grep -oE '[0-9]+ WARNING' | grep -oE '[0-9]+' | head -1 || echo "0")
 
       echo "  PHPCS: $PHPCS_ERRORS errors, $PHPCS_WARNS warnings (vs WP standards)"
 
