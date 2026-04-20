@@ -337,6 +337,79 @@ if [ "$MODE" = "full" ]; then
   fi
 fi
 
+# ── STEP 11: CLAUDE SKILL AUDITS ──────────────────────────────────────────────
+# Auto-triggers Antigravity/skill-based deep audits if claude CLI is available.
+# Runs 4 parallel agents: WP standards · Security · Performance · DB
+# Each writes findings into reports/skill-audit-*.md
+
+if [ "$MODE" = "full" ] && command -v claude &>/dev/null && [ -n "$PLUGIN_PATH" ]; then
+  header "Step 11: Claude Skill Audits (parallel)"
+  log "## Step 11: Skill Audits"
+
+  SKILL_REPORT_DIR="reports/skill-audits"
+  mkdir -p "$SKILL_REPORT_DIR"
+
+  echo -e "  ${CYAN}Running 4 parallel skill audits on $PLUGIN_PATH...${NC}"
+  echo -e "  ${CYAN}This takes 2-4 minutes. Check $SKILL_REPORT_DIR/ for live output.${NC}"
+
+  # WP Standards audit
+  claude "/wordpress-plugin-development
+Audit the WordPress plugin at: $PLUGIN_PATH
+Check: naming conventions, escaping, nonce usage, capability checks, hooks, i18n.
+List top 10 issues by severity. Output markdown." \
+    > "$SKILL_REPORT_DIR/wp-standards.md" 2>/dev/null &
+  PID_WP=$!
+
+  # Security / penetration testing
+  claude "/wordpress-penetration-testing
+Security audit the WordPress plugin at: $PLUGIN_PATH
+Check: XSS, CSRF, SQLi, auth bypass, path traversal, OWASP Top 10.
+Rate each finding: Critical / High / Medium / Low. Output markdown." \
+    > "$SKILL_REPORT_DIR/security.md" 2>/dev/null &
+  PID_SEC=$!
+
+  # Performance deep-dive
+  claude "/performance-engineer
+Analyze performance of the WordPress plugin at: $PLUGIN_PATH
+Check: expensive hooks, unnecessary DB calls, heavy asset loading, blocking scripts.
+Rank issues by impact. Output markdown." \
+    > "$SKILL_REPORT_DIR/performance.md" 2>/dev/null &
+  PID_PERF=$!
+
+  # Database optimizer
+  claude "/database-optimizer
+Review database usage in the WordPress plugin at: $PLUGIN_PATH
+Check: N+1 patterns, missing indexes, raw SQL without prepare(), autoload bloat.
+List fixes with SQL examples. Output markdown." \
+    > "$SKILL_REPORT_DIR/database.md" 2>/dev/null &
+  PID_DB=$!
+
+  # Wait for all 4 to finish
+  wait $PID_WP $PID_SEC $PID_PERF $PID_DB 2>/dev/null
+
+  # Report results
+  SKILL_FILES=$(ls "$SKILL_REPORT_DIR"/*.md 2>/dev/null | wc -l | tr -d ' ')
+  if [ "$SKILL_FILES" -gt 0 ]; then
+    ok "Skill audits complete — $SKILL_FILES reports in $SKILL_REPORT_DIR/"
+    log "- ✓ Skill audits: $SKILL_REPORT_DIR/"
+    ((PASS++))
+
+    # Count critical security findings across all reports
+    CRIT=$(grep -rli "Critical\|CRITICAL" "$SKILL_REPORT_DIR/" 2>/dev/null | wc -l | tr -d ' ')
+    if [ "$CRIT" -gt 0 ]; then
+      warn "Critical findings in skill audits — review $SKILL_REPORT_DIR/security.md before release"
+      ((WARN++))
+    fi
+  else
+    warn "Skill audits produced no output — run manually: claude '/wordpress-penetration-testing Audit $PLUGIN_PATH'"
+    log "- ⚠ Skill audits: no output"
+    ((WARN++))
+  fi
+elif [ "$MODE" = "full" ] && [ ! -z "$PLUGIN_PATH" ]; then
+  echo -e "  ${YELLOW}Skill audits: claude CLI not found. Install with: npm install -g @anthropic-ai/claude-code${NC}"
+  echo -e "  ${YELLOW}Then re-run gauntlet for automated /wordpress-penetration-testing and /performance-engineer audits.${NC}"
+fi
+
 # ── FINAL REPORT ──────────────────────────────────────────────────────────────
 header "Results"
 log "---"
@@ -350,11 +423,15 @@ echo "================================="
 echo -e "${BOLD}Results${NC}: ${GREEN}$PASS passed${NC} | ${YELLOW}$WARN warnings${NC} | ${RED}$FAIL failed${NC}"
 echo ""
 echo -e "${BOLD}Reports generated:${NC}"
-echo "  MD report:   $(pwd)/$REPORT_FILE"
-echo "  HTML report: $(pwd)/reports/playwright-html/index.html"
-echo "  Screenshots: $(pwd)/reports/screenshots/"
+echo "  MD report:    $(pwd)/$REPORT_FILE"
+echo "  HTML report:  $(pwd)/reports/playwright-html/index.html"
+echo "  Screenshots:  $(pwd)/reports/screenshots/"
+echo "  Videos:       $(pwd)/reports/videos/"
+[ -d "reports/skill-audits" ] && echo "  Skill audits: $(pwd)/reports/skill-audits/"
+[ -f "reports/NEXTER-VS-RANKMATH-UAT.html" ] && echo "  Compare UAT:  $(pwd)/reports/NEXTER-VS-RANKMATH-UAT.html"
 echo ""
-echo -e "${CYAN}Open HTML report:${NC} npx playwright show-report reports/playwright-html"
+echo -e "${CYAN}Open HTML report:${NC}  npx playwright show-report reports/playwright-html"
+echo -e "${CYAN}Open skill audits:${NC} open reports/skill-audits/"
 echo ""
 
 if [ "$FAIL" -gt 0 ]; then
