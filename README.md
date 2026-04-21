@@ -20,7 +20,11 @@
 
 **👨‍💻 Dev** → zero-regression releases &nbsp;·&nbsp; **🧪 QA** → structured test coverage &nbsp;·&nbsp; **📊 PM** → flow maps + complexity scores &nbsp;·&nbsp; **📈 PA** → analytics events verified &nbsp;·&nbsp; **🎨 Designer** → visual diffs + UI audits &nbsp;·&nbsp; **👤 End User** → real browser, real flows
 
-📖 **[Read VISION.md](VISION.md)** — the anchor doc defining Orbit's 6 perspectives, smart principles, and ongoing research loop
+📖 **[VISION.md](VISION.md)** &nbsp;·&nbsp; 🚀 **[What Orbit Does (v2.0)](docs/22-what-orbit-does.md)** &nbsp;·&nbsp; 🛡️ **[Evergreen Security Log](docs/21-evergreen-security.md)**
+
+---
+
+**v2.0 · April 2026 · Mature release** — covers WP.org plugin-check canonical rules, Patchstack 2025 top-5 vulnerability classes, WP 6.5→7.0 features, PHP 8.0→8.5 compatibility, and the April 2026 EssentialPlugin supply-chain attack patterns. 22 security patterns · 20+ Playwright specs · 5 custom Claude skills · auto-scaffolder that reads your plugin code.
 
 Covers **Elementor Addons · Gutenberg Blocks · SEO Plugins · WooCommerce Extensions · Themes**
 

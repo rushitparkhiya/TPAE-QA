@@ -128,6 +128,8 @@ The table below is your navigation guide to the full Orbit documentation. Find t
 | **Business logic testing** — write plugin-specific tests on top of Orbit | [docs/19-business-logic-guide.md](docs/19-business-logic-guide.md) |
 | **Auto-generate tests** — Orbit reads your code, drafts scenarios + specs | [docs/20-auto-test-generation.md](docs/20-auto-test-generation.md) |
 | **VISION** — 6 perspectives, smart principles, ongoing research | [VISION.md](VISION.md) |
+| **What Orbit Does (v2.0)** — shareable overview: capabilities, benefits, diffs vs alternatives | [docs/22-what-orbit-does.md](docs/22-what-orbit-does.md) |
+| **Evergreen Security Log** — living attack-pattern catalog, 90-day cadence | [docs/21-evergreen-security.md](docs/21-evergreen-security.md) |
 | **Power tools** — extend Orbit with extra tooling | [docs/power-tools.md](docs/power-tools.md) |
 
 **Recommended reading order for beginners:** Start with [docs/00-concepts.md](docs/00-concepts.md) — it explains every tool in the diagram in plain English. Then `01-installation.md` → `02-configuration.md` → `04-gauntlet.md`. The rest you can read on demand when you need it.
