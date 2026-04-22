@@ -1166,5 +1166,4 @@ Full skill-to-task mapping: [SKILLS.md](SKILLS.md). Power tools setup: [docs/pow
 
 | Contributor | GitHub | Role |
 |---|---|---|
-| **Aditya R Sharma** | [adityaarsharma](https://github.com/adityaarsharma) | Original Author |
 | **Rushit Parkhiya** | [rushitparkhiya](https://github.com/rushitparkhiya) | Contributor |
