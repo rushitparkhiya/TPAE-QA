@@ -1159,3 +1159,12 @@ Full skill-to-task mapping: [SKILLS.md](SKILLS.md). Power tools setup: [docs/pow
 ---
 
 *Built by [Aditya R Sharma](https://adityaarsharma.com) · [github.com/adityaarsharma/orbit](https://github.com/adityaarsharma/orbit) · Licensed for any WordPress plugin team serious about shipping quality.*
+
+---
+
+## Contributors
+
+| Contributor | GitHub | Role |
+|---|---|---|
+| **Aditya R Sharma** | [adityaarsharma](https://github.com/adityaarsharma) | Original Author |
+| **Rushit Parkhiya** | [rushitparkhiya](https://github.com/rushitparkhiya) | Contributor |
