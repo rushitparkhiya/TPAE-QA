@@ -1,0 +1,18 @@
+{
+  "core": "https://downloads.wordpress.org/release/wordpress-6.7.zip",
+  "phpVersion": "8.1",
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/elementor.zip",
+    "/c/Users/Posim/AppData/Local/Temp/tpae-plugin/the-plus-addons-for-elementor-page-builder",
+    "https://downloads.wordpress.org/plugin/query-monitor.zip"
+  ],
+  "port": 8881,
+  "testsPort": 8981,
+  "config": {
+    "WP_DEBUG": true,
+    "WP_DEBUG_LOG": true,
+    "WP_DEBUG_DISPLAY": false,
+    "SAVEQUERIES": true,
+    "SCRIPT_DEBUG": true
+  }
+}
