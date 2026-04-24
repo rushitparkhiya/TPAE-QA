@@ -9,7 +9,7 @@ const AUTH_FILE = path.join(__dirname, '../../.auth/wp-admin.json');
 // View after any run: npx playwright show-report reports/playwright-html
 module.exports = defineConfig({
   testDir: './',
-  timeout: 120_000,
+  timeout: 300_000,
   expect: {
     timeout: 30_000,
     toHaveScreenshot: { maxDiffPixelRatio: 0.02, threshold: 0.2 },

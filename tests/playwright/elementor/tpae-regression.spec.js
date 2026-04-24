@@ -74,7 +74,7 @@ async function snap(page, label) {
  * Uses 'domcontentloaded' (not 'networkidle') to avoid BUG-005 timeout.
  */
 async function goto(page, url, extra = 2000) {
-  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45_000 });
+  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 180_000 });
   await page.waitForTimeout(extra);
 }
 

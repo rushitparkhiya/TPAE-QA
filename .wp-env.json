@@ -3,7 +3,8 @@
   "phpVersion": "8.1",
   "plugins": [
     "C:/Users/Posim/Downloads/elementor-patched/elementor",
-    "C:/Users/Posim/Downloads/tpae-after/the-plus-addons-for-elementor-page-builder",
+    "C:/Users/Posim/Downloads/tpae-free-final/the-plus-addons-for-elementor-page-builder",
+    "C:/Users/Posim/Downloads/tpae-pro-final/theplus_elementor_addon",
     "https://downloads.wordpress.org/plugin/query-monitor.zip"
   ],
   "testsEnvironment": false,
