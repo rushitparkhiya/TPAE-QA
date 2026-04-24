@@ -30,11 +30,11 @@ setup('authenticate as WordPress admin', async ({ page }) => {
     const currentUrl = page.url();
     if (currentUrl.includes('wp-login.php')) {
       // Try programmatic form submission as fallback
-      await page.evaluate((user, pass) => {
+      await page.evaluate(({ user, pass }) => {
         document.querySelector('#user_login').value = user;
         document.querySelector('#user_pass').value = pass;
         document.querySelector('#loginform').submit();
-      }, WP_USER, WP_PASS);
+      }, { user: WP_USER, pass: WP_PASS });
       await page.waitForURL(/wp-admin/, { timeout: 15000 });
     }
   }

@@ -1,0 +1,2474 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\playwright.config.js",
+    "rootDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/auth.setup.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "visual",
+        "name": "visual",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/visual/**/*.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/responsive.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "tablet",
+        "name": "tablet",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/responsive.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "video",
+        "name": "video",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/**/*.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "elementor-widgets",
+        "name": "elementor-widgets",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/elementor/**/*.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "rtl",
+        "name": "rtl",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/rtl-layout.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "multisite",
+        "name": "multisite",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/multisite-activation.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "admin-colors",
+        "name": "admin-colors",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/admin-color-schemes.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "keyboard",
+        "name": "keyboard",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/keyboard-nav.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "lifecycle",
+        "name": "lifecycle",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/uninstall-cleanup.spec.js",
+          "**/flows/update-path.spec.js",
+          "**/flows/block-deprecation.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "rest-apppass",
+        "name": "rest-apppass",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/app-passwords.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "ux-states",
+        "name": "ux-states",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/empty-states.spec.js",
+          "**/flows/error-states.spec.js",
+          "**/flows/loading-states.spec.js",
+          "**/flows/form-validation.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "conflict",
+        "name": "conflict",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/plugin-conflict.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "wp7",
+        "name": "wp7",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/wp7-connectors.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "pm",
+        "name": "pm",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/user-journey.spec.js",
+          "**/flows/onboarding-ftue.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "analytics",
+        "name": "analytics",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/analytics-events.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "visual-release",
+        "name": "visual-release",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/visual-regression-release.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Posim/Downloads/Play Wright/orbit/test-results/after",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "bundle-size",
+        "name": "bundle-size",
+        "testDir": "C:/Users/Posim/Downloads/Play Wright/orbit/tests/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/flows/bundle-size.spec.js"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.js",
+      "file": "auth.setup.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate as WordPress admin",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30527,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[auth] Logged in as admin. Cookies saved to C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\.auth\\wp-admin.json\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-24T05:26:33.687Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f376efe52c54b1a876fd-2ee143fcd5c12957979d",
+          "file": "auth.setup.js",
+          "line": 9,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "elementor\\tpae-regression.spec.js",
+      "file": "elementor/tpae-regression.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Block A — Plugin Health",
+          "file": "elementor/tpae-regression.spec.js",
+          "line": 122,
+          "column": 6,
+          "specs": [
+            {
+              "title": "A-01 · WP admin loads without redirect to login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8164,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:07.395Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-afd069f161d01f1aedf8",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 124,
+              "column": 3
+            },
+            {
+              "title": "A-02 · Plugins page shows TPAE as active (not deactivated or error)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 12937,
+                      "error": {
+                        "message": "Error: TPAE not found on plugins page — plugin may not be installed\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: TPAE not found on plugins page — plugin may not be installed\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:142:89",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 89,
+                          "line": 142
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 140 |\u001b[39m       body\u001b[33m.\u001b[39mincludes(\u001b[32m'theplus'\u001b[39m) \u001b[33m||\u001b[39m\n \u001b[90m 141 |\u001b[39m       body\u001b[33m.\u001b[39mincludes(\u001b[32m'TPAE'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 142 |\u001b[39m     expect(tpaePresent\u001b[33m,\u001b[39m \u001b[32m'TPAE not found on plugins page — plugin may not be installed'\u001b[39m)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 143 |\u001b[39m     \u001b[36mawait\u001b[39m snap(page\u001b[33m,\u001b[39m \u001b[32m'A-02-plugins-list'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 144 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 145 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 89,
+                            "line": 142
+                          },
+                          "message": "Error: TPAE not found on plugins page — plugin may not be installed\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  140 |       body.includes('theplus') ||\n  141 |       body.includes('TPAE');\n> 142 |     expect(tpaePresent, 'TPAE not found on plugins page — plugin may not be installed').toBeTruthy();\n      |                                                                                         ^\n  143 |     await snap(page, 'A-02-plugins-list');\n  144 |   });\n  145 |\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:142:89"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:07.451Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--274d1-e-not-deactivated-or-error--chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--274d1-e-not-deactivated-or-error--chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--274d1-e-not-deactivated-or-error--chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 89,
+                        "line": 142
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-9020d05172488d4b1aca",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 132,
+              "column": 3
+            },
+            {
+              "title": "A-03 · No PHP errors or warnings in WP debug log format on admin home",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 13080,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:07.430Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-697d21a7aa1ce321c30b",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 146,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Block B — Admin Dashboard",
+          "file": "elementor/tpae-regression.spec.js",
+          "line": 159,
+          "column": 6,
+          "specs": [
+            {
+              "title": "B-01 · TPAE dashboard page loads (domcontentloaded — not networkidle)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 9089,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[B-01] Dashboard title: \"WordPress › Update\"\n"
+                        },
+                        {
+                          "text": "[B-01] JS errors: 0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:07.460Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-f5538cb7b62f9933d32f",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 161,
+              "column": 3
+            },
+            {
+              "title": "B-02 · TPAE top-level admin menu item is visible in sidebar",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 29701,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#toplevel_page_theplus_welcome_page')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#toplevel_page_theplus_welcome_page')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#toplevel_page_theplus_welcome_page')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#toplevel_page_theplus_welcome_page')\u001b[22m\n\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:178:28",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 28,
+                          "line": 178
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 176 |\u001b[39m     \u001b[36mawait\u001b[39m goto(page\u001b[33m,\u001b[39m \u001b[33mPAGES\u001b[39m\u001b[33m.\u001b[39madminHome)\u001b[33m;\u001b[39m\n \u001b[90m 177 |\u001b[39m     \u001b[36mconst\u001b[39m tpaeMenu \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#toplevel_page_theplus_welcome_page'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 178 |\u001b[39m     \u001b[36mawait\u001b[39m expect(tpaeMenu)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 179 |\u001b[39m     \u001b[36mawait\u001b[39m snap(page\u001b[33m,\u001b[39m \u001b[32m'B-02-admin-menu'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 180 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 181 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 28,
+                            "line": 178
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#toplevel_page_theplus_welcome_page')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#toplevel_page_theplus_welcome_page')\u001b[22m\n\n\n  176 |     await goto(page, PAGES.adminHome);\n  177 |     const tpaeMenu = page.locator('#toplevel_page_theplus_welcome_page');\n> 178 |     await expect(tpaeMenu).toBeVisible({ timeout: 10_000 });\n      |                            ^\n  179 |     await snap(page, 'B-02-admin-menu');\n  180 |   });\n  181 |\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:178:28"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:15.988Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--9d0cc--item-is-visible-in-sidebar-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--9d0cc--item-is-visible-in-sidebar-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--9d0cc--item-is-visible-in-sidebar-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 28,
+                        "line": 178
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-6e71c1fb6c419c717b8f",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 175,
+              "column": 3
+            },
+            {
+              "title": "B-03 · TPAE sub-menu items render under the top-level menu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 145355,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 74,
+                            "line": 202
+                          },
+                          "message": "Error: No TPAE sub-menu links found in admin sidebar\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  200 |       adminMenuText.includes('Extensions') ||\n  201 |       adminMenuText.includes('The Plus');\n> 202 |     expect(hasSubLinks, 'No TPAE sub-menu links found in admin sidebar').toBeTruthy();\n      |                                                                          ^\n  203 |     await snap(page, 'B-03-submenu');\n  204 |   });\n  205 |\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:202:74"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[B-03] Sub-menu visible: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:17.039Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--59c1f-er-under-the-top-level-menu-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--59c1f-er-under-the-top-level-menu-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--59c1f-er-under-the-top-level-menu-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-c2efcb22cc216605cfa1",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 182,
+              "column": 3
+            },
+            {
+              "title": "B-04 · TPAE dashboard React app mounts — root element present in DOM",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 29230,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[B-04] App root found: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:20.948Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-3e4a627d1528802180f7",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 206,
+              "column": 3
+            },
+            {
+              "title": "B-05 · No critical JS errors on dashboard page load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 21239,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:26.490Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-01f895c3441c29c49320",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 219,
+              "column": 3
+            },
+            {
+              "title": "B-06 · No broken images (4xx) on TPAE dashboard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15694,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:51.990Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-5d41b7d25929d4087a98",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 234,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Block C — Onboarding Flow",
+          "file": "elementor/tpae-regression.spec.js",
+          "line": 251,
+          "column": 6,
+          "specs": [
+            {
+              "title": "C-01 · Onboarding modal/cover is present in DOM on fresh visit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 16363,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[C-01] Onboarding element found in DOM: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:48.458Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-44ceee3f7c7339c85510",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 253,
+              "column": 3
+            },
+            {
+              "title": "C-02 · Onboarding AJAX endpoint responds — action tpae_dashboard_ajax_call",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 18568,
+                      "error": {
+                        "message": "Error: AJAX endpoint returned non-200\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m",
+                        "stack": "Error: AJAX endpoint returned non-200\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:297:63",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 63,
+                          "line": 297
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 295 |\u001b[39m\n \u001b[90m 296 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`[C-02] AJAX status: ${response.status} | body: ${response.body?.slice(0, 120)}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 297 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'AJAX endpoint returned non-200'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 298 |\u001b[39m     \u001b[90m// Should return JSON (not -1 or empty — those indicate missing action handler)\u001b[39m\n \u001b[90m 299 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody\u001b[33m,\u001b[39m \u001b[32m'AJAX returned empty body'\u001b[39m)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 300 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody\u001b[33m,\u001b[39m \u001b[32m'AJAX returned -1 (action not registered)'\u001b[39m)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBe(\u001b[32m'-1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 63,
+                            "line": 297
+                          },
+                          "message": "Error: AJAX endpoint returned non-200\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n\n  295 |\n  296 |     console.log(`[C-02] AJAX status: ${response.status} | body: ${response.body?.slice(0, 120)}`);\n> 297 |     expect(response.status, 'AJAX endpoint returned non-200').toBe(200);\n      |                                                               ^\n  298 |     // Should return JSON (not -1 or empty — those indicate missing action handler)\n  299 |     expect(response.body, 'AJAX returned empty body').toBeTruthy();\n  300 |     expect(response.body, 'AJAX returned -1 (action not registered)').not.toBe('-1');\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:297:63"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[C-02] AJAX status: 400 | body: 0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:27:50.325Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--64bc6-on-tpae-dashboard-ajax-call-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--64bc6-on-tpae-dashboard-ajax-call-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--64bc6-on-tpae-dashboard-ajax-call-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 63,
+                        "line": 297
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-60ee9fbc47aa188e3826",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 266,
+              "column": 3
+            },
+            {
+              "title": "C-03 · First AJAX call returns success:true (not false on first run — BUG-003 regression)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 26808,
+                      "error": {
+                        "message": "Error: BUG-003 REGRESSION: tpae_onboarding_setup returned success:false on first call\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m",
+                        "stack": "Error: BUG-003 REGRESSION: tpae_onboarding_setup returned success:false on first call\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:337:9",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 9,
+                          "line": 337
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 335 |\u001b[39m         response\u001b[33m.\u001b[39msuccess\u001b[33m,\u001b[39m\n \u001b[90m 336 |\u001b[39m         \u001b[32m'BUG-003 REGRESSION: tpae_onboarding_setup returned success:false on first call'\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 337 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 338 |\u001b[39m     }\n \u001b[90m 339 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 340 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 9,
+                            "line": 337
+                          },
+                          "message": "Error: BUG-003 REGRESSION: tpae_onboarding_setup returned success:false on first call\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n\n  335 |         response.success,\n  336 |         'BUG-003 REGRESSION: tpae_onboarding_setup returned success:false on first call'\n> 337 |       ).toBe(true);\n      |         ^\n  338 |     }\n  339 |   });\n  340 |\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:337:9"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[C-03] tpae_onboarding_setup response: 0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:28:04.915Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--22d4f-t-run-—-BUG-003-regression--chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--22d4f-t-run-—-BUG-003-regression--chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--22d4f-t-run-—-BUG-003-regression--chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 9,
+                        "line": 337
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-03964138288d74d2441f",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 304,
+              "column": 3
+            },
+            {
+              "title": "C-04 · localStorage keys tpae_onboarding_step / tpae_import_step clear after logout (BUG-004 regression)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 62332,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[C-04] After logout: tpae_onboarding_step=\"3\", tpae_import_step=\"2\"\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "[C-04] BUG-004 NOT FIXED: localStorage keys still present after logout\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:28:08.156Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-9c1074562eb12bb3a3b3",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 341,
+              "column": 3
+            },
+            {
+              "title": "C-05 · Skip Setup button is present and dismisses the onboarding overlay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 29739,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[C-05] Skip button found and clicked: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:28:12.756Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-f3cd8de220136533a76f",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 374,
+              "column": 3
+            },
+            {
+              "title": "C-06 · Onboarding step navigation — Next/Continue button advances step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 20884,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[C-06] Step navigation found: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:28:37.438Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-88be56859c0484a24440",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 403,
+              "column": 3
+            },
+            {
+              "title": "C-07 · Onboarding timestamps saved only on genuine completion (BUG-010 regression)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 19964,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[C-07] Checking: tpae_onboarding_time should not be set until actual completion\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:28:42.988Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-9937986fe1924aa6429b",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 431,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Block D — Elementor Widgets Panel",
+          "file": "elementor/tpae-regression.spec.js",
+          "line": 444,
+          "column": 6,
+          "specs": [
+            {
+              "title": "D-01 · Elementor editor opens without fatal error on new page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 64701,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[D-01] Elementor panel visible: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:28:59.100Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-0671c8307dd2df0db02b",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 446,
+              "column": 3
+            },
+            {
+              "title": "D-02 · TPAE widget category appears in Elementor panel",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 63266,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[D-02] TPAE category element found: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:29:03.047Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-a0ba740787b291e4d30e",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 457,
+              "column": 3
+            },
+            {
+              "title": "D-03 · Searching \"text block\" in Elementor panel returns TPAE widget",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 69911,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [
+                        {
+                          "text": "[D-03] Search input not found — Elementor may be loading slowly\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:29:10.612Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-c7d5a6736134c61cf7df",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 475,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Block E — Text Block Widget Controls",
+          "file": "elementor/tpae-regression.spec.js",
+          "line": 503,
+          "column": 6,
+          "specs": [
+            {
+              "title": "E-01 · Text Block widget is discoverable in Elementor panel search",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 74596,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:29:44.933Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-87dd55dd1017dbd4f83c",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 547,
+              "column": 3
+            },
+            {
+              "title": "E-02 · Text Block panel has Content, Style, Advanced tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 73500,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[E-02] Tab \"Content\" visible: false\n"
+                        },
+                        {
+                          "text": "[E-02] Tab \"Style\" visible: false\n"
+                        },
+                        {
+                          "text": "[E-02] Tab \"Advanced\" visible: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:30:03.889Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-25653875e286db19bd4f",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 564,
+              "column": 3
+            },
+            {
+              "title": "E-03 · Text Block Content tab — text editor control is present",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 72129,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[E-03] Text control present: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:30:06.381Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-527ae900c89cc274df81",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 578,
+              "column": 3
+            },
+            {
+              "title": "E-04 · Text Block Style tab loads without JS error",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 83173,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/post-new.php?post_type=page\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/post-new.php?post_type=page\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at openEditorWithTextBlock (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:510:11)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:598:11",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 14,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m \u001b[90m */\u001b[39m\n \u001b[90m 76 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m goto(page\u001b[33m,\u001b[39m url\u001b[33m,\u001b[39m extra \u001b[33m=\u001b[39m \u001b[35m2000\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(url\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m45\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(extra)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m }\n \u001b[90m 80 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 14,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/post-new.php?post_type=page\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n  75 |  */\n  76 | async function goto(page, url, extra = 2000) {\n> 77 |   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45_000 });\n     |              ^\n  78 |   await page.waitForTimeout(extra);\n  79 | }\n  80 |\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at openEditorWithTextBlock (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:510:11)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:598:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:30:20.613Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--c22b1--tab-loads-without-JS-error-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--c22b1--tab-loads-without-JS-error-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 14,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-5059e4495c74d9e5b758",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 596,
+              "column": 3
+            },
+            {
+              "title": "E-05 · Text Block Advanced tab is accessible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 95136,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:31:00.112Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-6f5b56f57ad96658ebdc",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 613,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Block F — Asset Integrity",
+          "file": "elementor/tpae-regression.spec.js",
+          "line": 630,
+          "column": 6,
+          "specs": [
+            {
+              "title": "F-01 · No 404 CSS/JS assets on TPAE dashboard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 41657,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:31:17.560Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-0c8192b9ff06fc1f9343",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 632,
+              "column": 3
+            },
+            {
+              "title": "F-02 · No 404 CSS/JS assets on Elementor editor",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 80434,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:31:18.638Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-b4f7d0c1e31970f2c03d",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 646,
+              "column": 3
+            },
+            {
+              "title": "F-03 · TPAE CSS/JS assets actually load from the correct plugin URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18906,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[F-03] TPAE assets loaded: 2\n"
+                        },
+                        {
+                          "text": "  302 http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\n"
+                        },
+                        {
+                          "text": "  200 http://localhost:8881/wp-admin/upgrade.php?_wp_http_referer=%2Fwp-admin%2Fadmin.php%3Fpage%3Dtheplus_welcome_page\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:32:01.325Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-fba45d509df3c4dfbf92",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 661,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Block G — Settings Pages",
+          "file": "elementor/tpae-regression.spec.js",
+          "line": 680,
+          "column": 6,
+          "specs": [
+            {
+              "title": "G-01 · Widgets manager page loads without PHP error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 21756,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:31:59.456Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-df135acc00dbebc98541",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 682,
+              "column": 3
+            },
+            {
+              "title": "G-02 · Extensions page loads without PHP error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23435,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:32:20.929Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-eca9c0214c073eea7cf7",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 690,
+              "column": 3
+            },
+            {
+              "title": "G-03 · Settings page loads without PHP error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 23389,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:32:21.297Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-200a6a3a33431062c01e",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 696,
+              "column": 3
+            },
+            {
+              "title": "G-04 · Widgets page lists TPAE widget names in content",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 85955,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_widgets\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_widgets\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:703:11",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 14,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m \u001b[90m */\u001b[39m\n \u001b[90m 76 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m goto(page\u001b[33m,\u001b[39m url\u001b[33m,\u001b[39m extra \u001b[33m=\u001b[39m \u001b[35m2000\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(url\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m45\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(extra)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m }\n \u001b[90m 80 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 14,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_widgets\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n  75 |  */\n  76 | async function goto(page, url, extra = 2000) {\n> 77 |   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45_000 });\n     |              ^\n  78 |   await page.waitForTimeout(extra);\n  79 | }\n  80 |\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:703:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:32:35.707Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--5a4fe-PAE-widget-names-in-content-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--5a4fe-PAE-widget-names-in-content-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--5a4fe-PAE-widget-names-in-content-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 14,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-cbebd99fe8ecdd53eaac",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 702,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Block H — Known Bug Regressions",
+          "file": "elementor/tpae-regression.spec.js",
+          "line": 720,
+          "column": 6,
+          "specs": [
+            {
+              "title": "H-BUG001 · No PHP fatal on plugin activation (is_plugin_active before wp-admin loaded)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 59133,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:32:39.304Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-cd895f1ac4fd6d77c744",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 722,
+              "column": 3
+            },
+            {
+              "title": "H-BUG002 · Option key spelling — tpae_onbording_end is NOT the preferred key name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 124472,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[H-BUG002] onboarding_setup response: 0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:32:44.448Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-aff7179301344cb002d6",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 732,
+              "column": 3
+            },
+            {
+              "title": "H-BUG003 · AJAX onboarding_setup returns success:true on first call",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 133774,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[H-BUG003] First-run onboarding_setup: 0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:32:44.748Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-392bf63f4c485ed3a824",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 752,
+              "column": 3
+            },
+            {
+              "title": "H-BUG005 · Dashboard does not hang at networkidle (continuous XHR test)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 99548,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:783:11",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 14,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m \u001b[90m */\u001b[39m\n \u001b[90m 76 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m goto(page\u001b[33m,\u001b[39m url\u001b[33m,\u001b[39m extra \u001b[33m=\u001b[39m \u001b[35m2000\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(url\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m45\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(extra)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m }\n \u001b[90m 80 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 14,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n  75 |  */\n  76 | async function goto(page, url, extra = 2000) {\n> 77 |   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45_000 });\n     |              ^\n  78 |   await page.waitForTimeout(extra);\n  79 | }\n  80 |\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:783:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:33:38.727Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--4de57-rkidle-continuous-XHR-test--chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--4de57-rkidle-continuous-XHR-test--chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 14,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-5b8f1c462be99d2c7ffc",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 777,
+              "column": 3
+            },
+            {
+              "title": "H-BUG006 · Skip Setup button has confirmation or is clearly labelled as permanent",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 57564,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[H-BUG006] Skip button not visible (may be dismissed already)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:34:29.263Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-47cc406486a8549e87bb",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 801,
+              "column": 3
+            },
+            {
+              "title": "H-BUG007 · Elementor version check — no activation without version guard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 54580,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[H-BUG007] Elementor version incompatibility notice: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:34:49.766Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-146de7b7dc8b96e7c211",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 823,
+              "column": 3
+            },
+            {
+              "title": "H-BUG009 · Admin menu item at position 67.1 — TPAE menu is visible (not displaced)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 100312,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:837:11",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 14,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m \u001b[90m */\u001b[39m\n \u001b[90m 76 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m goto(page\u001b[33m,\u001b[39m url\u001b[33m,\u001b[39m extra \u001b[33m=\u001b[39m \u001b[35m2000\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(url\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m45\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(extra)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m }\n \u001b[90m 80 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 14,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n  75 |  */\n  76 | async function goto(page, url, extra = 2000) {\n> 77 |   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45_000 });\n     |              ^\n  78 |   await page.waitForTimeout(extra);\n  79 | }\n  80 |\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:837:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:34:58.838Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--96d23-u-is-visible-not-displaced--chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--96d23-u-is-visible-not-displaced--chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 14,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-14ceb9bdb121d1896d28",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 835,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Block I — Responsive & RTL",
+          "file": "elementor/tpae-regression.spec.js",
+          "line": 847,
+          "column": 6,
+          "specs": [
+            {
+              "title": "I-01 · TPAE dashboard is usable at 375px mobile viewport",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 93333,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:851:11",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 14,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m \u001b[90m */\u001b[39m\n \u001b[90m 76 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m goto(page\u001b[33m,\u001b[39m url\u001b[33m,\u001b[39m extra \u001b[33m=\u001b[39m \u001b[35m2000\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(url\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m45\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(extra)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m }\n \u001b[90m 80 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 14,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n  75 |  */\n  76 | async function goto(page, url, extra = 2000) {\n> 77 |   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45_000 });\n     |              ^\n  78 |   await page.waitForTimeout(extra);\n  79 | }\n  80 |\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:851:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:35:47.467Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--a9fe0-le-at-375px-mobile-viewport-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--a9fe0-le-at-375px-mobile-viewport-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 14,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-89a8882e8cb22bb5f42d",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 849,
+              "column": 3
+            },
+            {
+              "title": "I-02 · TPAE admin pages work at 768px tablet viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 63243,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:35:42.922Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-883d33fe4dbbca2af0ff",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 858,
+              "column": 3
+            },
+            {
+              "title": "I-03 · RTL — TPAE dashboard body has dir=\"rtl\" when WP is in Arabic locale",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 58851,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[I-03] html[dir]: \"null\"\n"
+                        },
+                        {
+                          "text": "[I-03] Elements with hard-coded dir=ltr: 0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:35:44.639Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d678c5a5927827458667-e55ac61bcff1ac0307c4",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 865,
+              "column": 3
+            },
+            {
+              "title": "I-04 · Full page responsive — 1440px desktop wide viewport",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 109889,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:881:11",
+                        "location": {
+                          "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                          "column": 14,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m \u001b[90m */\u001b[39m\n \u001b[90m 76 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m goto(page\u001b[33m,\u001b[39m url\u001b[33m,\u001b[39m extra \u001b[33m=\u001b[39m \u001b[35m2000\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(url\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m45\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(extra)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m }\n \u001b[90m 80 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                            "column": 14,
+                            "line": 77
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8881/wp-admin/admin.php?page=theplus_welcome_page\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n  75 |  */\n  76 | async function goto(page, url, extra = 2000) {\n> 77 |   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45_000 });\n     |              ^\n  78 |   await page.waitForTimeout(extra);\n  79 | }\n  80 |\n    at goto (C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:77:14)\n    at C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js:881:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-24T05:36:43.825Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--e8138-440px-desktop-wide-viewport-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\test-results\\after\\elementor-tpae-regression--e8138-440px-desktop-wide-viewport-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Posim\\Downloads\\Play Wright\\orbit\\tests\\playwright\\elementor\\tpae-regression.spec.js",
+                        "column": 14,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d678c5a5927827458667-aad3b8e5c4bfbb9e75bc",
+              "file": "elementor/tpae-regression.spec.js",
+              "line": 879,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-24T05:26:31.038Z",
+    "duration": 725985.8840000001,
+    "expected": 32,
+    "skipped": 0,
+    "unexpected": 11,
+    "flaky": 0
+  }
+}
