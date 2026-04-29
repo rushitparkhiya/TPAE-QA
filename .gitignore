@@ -10,6 +10,8 @@ plugins/pro/**/*.zip
 plugins/free/*/
 !plugins/free/.gitkeep
 !plugins/pro/.gitkeep
+# Allow the TPAE plugin zip so Docker provisioning can use it
+!plugins/free/the-plus-addons-for-elementor-page-builder.zip
 .env
 .env.local
 .env.test

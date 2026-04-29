@@ -1,0 +1,102 @@
+# Orbit — Security Audit Phase 1 — Full Docker Stack
+#
+# Boots WordPress + MariaDB + TPAE, provisions test content via WP-CLI,
+# then runs the Playwright security-audit spec.
+#
+# Usage:
+#   docker compose up --abort-on-container-exit --exit-code-from playwright
+#
+# Reports land in ./reports/  (mounted from host).
+# After the run:
+#   docker compose down -v   # tear down + wipe volumes
+#   npx playwright show-report reports/playwright-html
+
+services:
+
+  # ── MariaDB ──────────────────────────────────────────────────────────────
+  db:
+    image: mariadb:10.6
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE:      wordpress
+      MYSQL_USER:          wordpress
+      MYSQL_PASSWORD:      wordpress
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+
+  # ── WordPress (Apache + PHP 8.1) ──────────────────────────────────────────
+  wordpress:
+    image: wordpress:6.7.2-php8.1-apache
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST:     db
+      WORDPRESS_DB_NAME:     wordpress
+      WORDPRESS_DB_USER:     wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DEBUG:       "1"
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_DEBUG_LOG', true);
+        define('WP_DEBUG_DISPLAY', false);
+        define('SAVEQUERIES', true);
+        define('SCRIPT_DEBUG', true);
+    volumes:
+      - wp_data:/var/www/html
+      - ./plugins/free/the-plus-addons-for-elementor-page-builder.zip:/tmp/tpae.zip:ro
+    ports:
+      - "8881:80"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost/wp-login.php | grep -q 'Log In' || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 40s
+
+  # ── WP-CLI provisioning (runs once, exits 0 on success) ──────────────────
+  provision:
+    image: wordpress:cli-2.10-php8.1
+    depends_on:
+      wordpress:
+        condition: service_healthy
+    volumes:
+      - wp_data:/var/www/html
+      - ./plugins/free/the-plus-addons-for-elementor-page-builder.zip:/tmp/tpae.zip:ro
+      - ./scripts/docker-provision.sh:/provision.sh:ro
+    user: "33:33"
+    entrypoint: ["bash", "/provision.sh"]
+    environment:
+      WORDPRESS_DB_HOST:     db
+      WORDPRESS_DB_USER:     wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME:     wordpress
+      WP_HOME:               http://localhost:8881
+      WP_SITEURL:            http://localhost:8881
+
+  # ── Playwright test runner ────────────────────────────────────────────────
+  playwright:
+    build:
+      context: .
+      dockerfile: Dockerfile.playwright
+    depends_on:
+      provision:
+        condition: service_completed_successfully
+    environment:
+      WP_TEST_URL:   http://wordpress
+      WP_ADMIN_USER: admin
+      WP_ADMIN_PASS: password
+      CI: "true"
+    volumes:
+      - ./reports:/app/reports
+      - ./.auth:/app/.auth
+
+volumes:
+  db_data:
+  wp_data:

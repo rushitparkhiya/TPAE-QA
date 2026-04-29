@@ -1,0 +1,21 @@
+# Orbit — Playwright runner for Security Audit Phase 1
+#
+# Based on the official Playwright image — all browsers pre-installed.
+# Built by: docker compose up  (see docker-compose.yml)
+
+FROM mcr.microsoft.com/playwright:v1.59.1-noble
+
+WORKDIR /app
+
+# Install Node dependencies first (layer-cached unless package.json changes)
+COPY package*.json ./
+RUN npm ci --omit=dev
+
+# Copy only the files the tests need
+COPY tests/              ./tests/
+COPY setup/              ./setup/
+COPY scripts/playwright-entrypoint.sh /entrypoint.sh
+
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
